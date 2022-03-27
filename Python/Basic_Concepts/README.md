@@ -17,7 +17,7 @@ The interpreter will execute the hello.py file. The "python" is the interpreter 
 #### Compiler
 A compiler is a program that translates a program written in one programming language into a program written in another programming language. In Python, the compiler is the python virtual machine.
 #### Virtual Machine
-A virtual machine is a program that runs other programs. In Python, the virtual machine is the python interpreter.
+A virtual machine is a program that runs other programs. In Python, the virtual machine is the python interpreter. The PVM runs bytecode provided to it by the compiler. It then executes the bytecode by converting it into machine code and executing the machine code.
 #### Interpreter vs Compiler
 The python interpreter is a program that executes other programs. The python compiler is a program that translates a program written in one programming language into a program written in another programming language.
 #### Module
