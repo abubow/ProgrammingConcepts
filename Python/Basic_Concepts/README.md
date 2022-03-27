@@ -9,9 +9,9 @@ Python is a programming language that is interpreted and compiled. It is designe
 #### Interpreter
 An interpreter is a program that executes other programs. Python is an interpreted Language meaning that it is not require to be compiled before it can be executed. 
 when you run the following command in the terminal:
-```
-python hello.py
-```
+
+> python hello.py
+
 The interpreter will execute the hello.py file. The "python" is the interpreter and "hello.py" is the file that is being executed. The python virtual machine (PVM) is a virtual machine that runs python code ie. the python interpreter.
 #### Compiler
 A compiler is a program that translates a program written in one programming language into a program written in another programming language. In Python, the compiler is the python virtual machine.
