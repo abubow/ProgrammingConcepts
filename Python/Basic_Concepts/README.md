@@ -4,7 +4,8 @@ Python is a programming language that is interpreted and compiled. It is designe
 Python is available for Windows, Mac, and Linux.
 You may install Python from the [Python website](https://www.python.org/downloads/).
 ### Syntax
-Python is a programming language that is interpreted and compiled. It is designed to be highly readable and easy to use.
+Python is a programming language that is interpreted and compiled. It is designed to be highly readable and easy to use. Check the above given example files to understand the syntax. If you stil have any questions, please feel free to contact me. I will be happy to help you.
+Or you can check the [Python website Documentation](https://docs.python.org/3/tutorial/index.html).
 ### Key Terms
 #### Interpreter
 An interpreter is a program that executes other programs. Python is an interpreted Language meaning that it is not require to be compiled before it can be executed. 
