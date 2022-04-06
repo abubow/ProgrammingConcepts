@@ -46,4 +46,6 @@ int main()
     /* It is recommended to use the printf function instead of cout if the speed is important. 
     The printf function is faster than cout. The printf function is also more secure. 
     However, cout is more flexible and easy to use. */
+    system("pause");// pause is a function that pauses the program until the user presses a key.
+    return 0;
 }
