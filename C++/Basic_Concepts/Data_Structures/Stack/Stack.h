@@ -40,12 +40,21 @@ public:
         this->stack = new type[size];
     }
     virtual void push(type value) override{
-        if(top==capacity)
-            throw "Stack is full";
+        if(top==capacity){
+            //throw "Stack is full";
+            std::cout << "Stack is full" << std::endl;
+            return;
+        }
         stack[++top] = value;
     }
     virtual type pop() override{
-        return stack[--top];
+        if(top==-1){
+            //throw "Stack is empty";
+            std::cout << "Stack is empty" << std::endl;
+            return NULL;
+        }
+        return stack[top--];
+
     }
     virtual bool isEmpty() override{
         return top==-1;
@@ -58,10 +67,14 @@ public:
             delete[] stack;
     }
     virtual void print() override{
-        for (int i = 0; i <= top; i++){
-            //using printf to print the value
-            printf("%d ", stack[i]);
+        if(top==-1){
+            std::cout << "Stack is empty" << std::endl;
         }
+        else
+            for (int i = 0; i <= top; i++){
+                //using printf to print the value
+                printf("%d ", stack[i]);
+            }
         printf("\n");
     }
 protected:
