@@ -36,8 +36,17 @@ public:
         capacity = DEFAULT_STACK_SIZE;
     }
     Stack(int size){
-        this->size = size;
+        this->capacity = size;
         this->stack = new type[size];
+        this->top = -1;
+    }
+    Stack(const Stack<type>& other){
+        this->capacity = other.capacity;
+        this->stack = new type[other.capacity];
+        this->top = other.top;
+        for(int i=0; i<=this->top; i++){
+            this->stack[i] = other.stack[i];
+        }
     }
     virtual void push(type value) override{
         if(top==capacity){
