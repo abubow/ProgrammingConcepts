@@ -60,6 +60,14 @@ int main(){
     std::cout << "The stack is: \n";
     stack3.print();
     
+    std::cout << "Stack using Copy Constructor" << std::endl;
+    Stack<int> stack4(stack3);
+    std::cout << "The stack is: \n";
+    stack4.print();
+    std::cout << "Popping element: " << stack4.pop() << std::endl;
+    std::cout << "The stack is: \n";
+    stack4.print();
+    
 
     system("pause");
     return 0;
