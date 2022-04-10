@@ -1,5 +1,6 @@
 #pragma once
 #include <stdio.h>
+#include <iostream>
 #include "LinkedListADT.h"
 
 template <typename type>
@@ -62,14 +63,37 @@ public:
             printf("Index out of bounds\n");
             return;
         }
-
+        Node<type>* temp = head;
+        if (index == 0){
+            
+        }
 
     }
     void removeAll(type value);
-    void removeAtStart();
-    void removeAtEnd();
-    void get(int);
-    void print();
+    void removeAtStart(){
+        Node<type>* temp = head;
+        head = head->next;
+        delete head;
+    }
+    void removeAtEnd(){
+        Node<type>* temp = head;
+        while(temp->next!=tail;)
+    }
+
+    type get(int index){
+        static Node<type>* temp = head;
+        if(index==0)
+            return temp->value;
+        temp = temp -> next;
+        get(index - 1);
+    }
+    void print(){
+        Node<type>* temp = head;
+        while(temp!=nullptr){
+            std::cout << temp->value << " -> ";
+        }
+        std::cout << std::endl;
+    }
 private:
     struct Node{
         type data;
