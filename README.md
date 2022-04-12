@@ -5,6 +5,7 @@ This repo contains solutions in the following languages:
 1. Python
 2. C++
 3. Rust
-4. Java
-5. JavaScript
-6. C#
+4. C
+5. Java
+6. JavaScript
+7. C#
