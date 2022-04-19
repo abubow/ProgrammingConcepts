@@ -8,4 +8,5 @@ public:
     virtual T peek() = 0;
     virtual bool isEmpty() = 0;
     virtual bool isFull() = 0;
+    virtual int getSize() = 0;
 };
